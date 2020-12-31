@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MIT
  ********************************************************************************/
 
-import * as http from 'https';
+import * as https from 'https';
 import { LogLevel } from '@cloudide/core/lib/common/plugin-common';
 import { PluginPage, AbstractFrontend } from '@cloudide/core/lib/browser/plugin-api';
 import { exposable, expose } from '@cloudide/messaging';
@@ -27,7 +27,7 @@ class Frontend extends AbstractFrontend {
      * In this function your can call function exposed by backend
      */
     run(): void {
-        const httpCallOptions: http.RequestOptions = {
+        const httpCallOptions: https.RequestOptions = {
             host: 'www.huaweicloud.com',
             path: '/'
         }
